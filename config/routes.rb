@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resource :session
   resources :post_images, onil: [:new, :create, :index, :show, :destroy]
   resources :passwords, param: :token
-  resources :users, only: [:new, :create, :show, :edit,] , path_names: { new: 'sign_up' }
+  resources :users, only: [:new, :create, :show, :edit, :update] , path_names: { new: 'sign_up' }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
