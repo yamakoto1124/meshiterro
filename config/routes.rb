@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+   namespace :admin do
+   resource :session, only: [:new, :create, :destroy]
+   get 'dashboards', to: 'dashboards#index'
+   resources :users, only: [:destroy]
+  end
   resources :post_images, only: [:new, :create, :index, :show]
   resource :session
   resources :post_images, only: [:new, :create, :index, :show, :destroy] do
