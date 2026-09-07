@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
 
   def after_authentication_url
-    about_path
+    post_images_path
   end
 
   def after_logout_url
