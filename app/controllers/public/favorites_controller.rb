@@ -1,4 +1,4 @@
-class FavoritesController < ApplicationController
+class Public::FavoritesController < Public::ApplicationController
 
   def create
     post_image = PostImage.find(params[:post_image_id])

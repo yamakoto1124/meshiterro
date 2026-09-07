@@ -1,4 +1,4 @@
-class PostImagesController < ApplicationController
+class Public::PostImagesController < Public::ApplicationController
 
   def new
     @post_image = PostImage.new
